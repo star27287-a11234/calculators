@@ -10,7 +10,7 @@ const notoSansKR = Noto_Sans_KR({
 })
 
 const GA_ID = 'G-XXXXXXXXXX'         // TODO: 실제 GA ID로 교체
-const ADSENSE_ID = 'ca-pub-XXXXXXXXX' // TODO: 실제 AdSense ID로 교체
+const ADSENSE_ID = 'ca-pub-1867480436223927'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cheongyak-calc.vercel.app'),
