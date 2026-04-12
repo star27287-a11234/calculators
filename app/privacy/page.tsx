@@ -34,7 +34,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="text-base font-bold mb-3" style={{ color: 'var(--text)' }}>5. 문의</h2>
-          <p>개인정보 관련 문의는 <a href="mailto:contact@cheongyak-calc.com" style={{ color: 'var(--primary)' }}>contact@cheongyak-calc.com</a>으로 연락해주세요.</p>
+          <p>개인정보 관련 문의는 <a href="mailto:starroad0717@gmail.com" style={{ color: 'var(--primary)' }}>starroad0717@gmail.com</a>으로 연락해주세요.</p>
         </section>
       </div>
     </div>

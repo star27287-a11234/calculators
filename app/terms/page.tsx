@@ -35,7 +35,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-base font-bold mb-3" style={{ color: 'var(--text)' }}>5. 문의</h2>
-          <p><a href="mailto:contact@cheongyak-calc.com" style={{ color: 'var(--primary)' }}>contact@cheongyak-calc.com</a></p>
+          <p><a href="mailto:starroad0717@gmail.com" style={{ color: 'var(--primary)' }}>starroad0717@gmail.com</a></p>
         </section>
       </div>
     </div>

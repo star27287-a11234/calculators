@@ -64,7 +64,7 @@ export default async function HomePage() {
       {/* 히어로 */}
       <section style={{ background: 'linear-gradient(135deg, #1a73e8 0%, #1557b0 100%)' }}>
         <div className="max-w-6xl mx-auto px-5 py-16 sm:py-20">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl mx-auto text-center">
             <div className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-full mb-5">
               2026년 최신 기준 반영
             </div>
@@ -75,7 +75,7 @@ export default async function HomePage() {
               가점 계산부터 당첨 커트라인 조회, 자격 확인, DSR 계산까지.<br className="hidden sm:block" />
               국토교통부 공식 기준으로 정확하게 계산합니다.
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 justify-center">
               <Link href="/calculators/score"
                 className="inline-flex items-center gap-2 bg-white text-[#1a73e8] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-all hover:-translate-y-0.5">
                 가점 계산하기 →

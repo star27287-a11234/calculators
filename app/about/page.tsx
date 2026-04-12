@@ -44,7 +44,7 @@ export default function AboutPage() {
         <section>
           <h2 className="text-lg font-bold mb-3" style={{ color: 'var(--text)' }}>문의</h2>
           <p>서비스 관련 문의는 이메일로 연락해주세요.</p>
-          <p className="mt-1"><a href="mailto:contact@cheongyak-calc.com" style={{ color: 'var(--primary)' }}>contact@cheongyak-calc.com</a></p>
+          <p className="mt-1"><a href="mailto:starroad0717@gmail.com" style={{ color: 'var(--primary)' }}>starroad0717@gmail.com</a></p>
         </section>
       </div>
 
