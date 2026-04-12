@@ -9,7 +9,7 @@ const notoSansKR = Noto_Sans_KR({
   display: 'swap',
 })
 
-const GA_ID = 'G-XXXXXXXXXX'         // TODO: 실제 GA ID로 교체
+const GA_ID = 'G-QQF5XJ1NMJ'
 const ADSENSE_ID = 'ca-pub-1867480436223927'
 
 export const metadata: Metadata = {
