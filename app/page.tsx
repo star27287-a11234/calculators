@@ -91,8 +91,10 @@ export default async function HomePage() {
 
       {/* 도구 그리드 */}
       <section className="max-w-6xl mx-auto px-5 py-14">
-        <h2 className="text-2xl font-black mb-2" style={{ color: 'var(--text)' }}>청약 도구 모음</h2>
-        <p className="mb-8 text-sm" style={{ color: 'var(--text-sub)' }}>공공데이터와 정부 정책 기반 — 광고 없이 무료 이용</p>
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-black mb-2" style={{ color: 'var(--text)' }}>청약 도구 모음</h2>
+          <p className="text-sm" style={{ color: 'var(--text-sub)' }}>공공데이터와 정부 정책 기반 — 광고 없이 무료 이용</p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {TOOLS.map(tool => (
             <Link key={tool.href} href={tool.href}
@@ -122,11 +124,9 @@ export default async function HomePage() {
       {guides.length > 0 && (
         <section style={{ background: 'var(--bg-sub)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
           <div className="max-w-6xl mx-auto px-5 py-14">
-            <div className="flex items-center justify-between mb-8">
-              <div>
-                <h2 className="text-2xl font-black" style={{ color: 'var(--text)' }}>청약 가이드</h2>
-                <p className="text-sm mt-1" style={{ color: 'var(--text-sub)' }}>정부 정책 기반 팩트로만 작성한 청약 완벽 가이드</p>
-              </div>
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-black mb-1" style={{ color: 'var(--text)' }}>청약 가이드</h2>
+              <p className="text-sm mt-1 mb-3" style={{ color: 'var(--text-sub)' }}>정부 정책 기반 팩트로만 작성한 청약 완벽 가이드</p>
               <Link href="/guides" className="text-sm font-semibold" style={{ color: 'var(--primary)' }}>전체 보기 →</Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -147,11 +147,9 @@ export default async function HomePage() {
       {/* 최신 블로그 */}
       {blogs.length > 0 && (
         <section className="max-w-6xl mx-auto px-5 py-14">
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <h2 className="text-2xl font-black" style={{ color: 'var(--text)' }}>최신 글</h2>
-              <p className="text-sm mt-1" style={{ color: 'var(--text-sub)' }}>청약 실전 정보와 분석</p>
-            </div>
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-black mb-1" style={{ color: 'var(--text)' }}>최신 글</h2>
+            <p className="text-sm mt-1 mb-3" style={{ color: 'var(--text-sub)' }}>청약 실전 정보와 분석</p>
             <Link href="/blog" className="text-sm font-semibold" style={{ color: 'var(--primary)' }}>전체 보기 →</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
