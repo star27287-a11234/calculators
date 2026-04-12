@@ -64,7 +64,7 @@ export default async function HomePage() {
       {/* 히어로 */}
       <section style={{ background: 'linear-gradient(135deg, #1a73e8 0%, #1557b0 100%)' }}>
         <div className="max-w-6xl mx-auto px-5 py-16 sm:py-20">
-          <div className="max-w-2xl mx-auto text-center">
+          <div style={{ maxWidth: '42rem', margin: '0 auto', textAlign: 'center' }}>
             <div className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-full mb-5">
               2026년 최신 기준 반영
             </div>
@@ -75,7 +75,7 @@ export default async function HomePage() {
               가점 계산부터 당첨 커트라인 조회, 자격 확인, DSR 계산까지.<br className="hidden sm:block" />
               국토교통부 공식 기준으로 정확하게 계산합니다.
             </p>
-            <div className="flex flex-wrap gap-3 justify-center">
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', justifyContent: 'center' }}>
               <Link href="/calculators/score"
                 className="inline-flex items-center gap-2 bg-white text-[#1a73e8] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-all hover:-translate-y-0.5">
                 가점 계산하기 →
@@ -91,7 +91,7 @@ export default async function HomePage() {
 
       {/* 도구 그리드 */}
       <section className="max-w-6xl mx-auto px-5 py-14">
-        <div className="text-center mb-8">
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <h2 className="text-2xl font-black mb-2" style={{ color: 'var(--text)' }}>청약 도구 모음</h2>
           <p className="text-sm" style={{ color: 'var(--text-sub)' }}>공공데이터와 정부 정책 기반 — 광고 없이 무료 이용</p>
         </div>
@@ -124,7 +124,7 @@ export default async function HomePage() {
       {guides.length > 0 && (
         <section style={{ background: 'var(--bg-sub)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
           <div className="max-w-6xl mx-auto px-5 py-14">
-            <div className="text-center mb-8">
+            <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
               <h2 className="text-2xl font-black mb-1" style={{ color: 'var(--text)' }}>청약 가이드</h2>
               <p className="text-sm mt-1 mb-3" style={{ color: 'var(--text-sub)' }}>정부 정책 기반 팩트로만 작성한 청약 완벽 가이드</p>
               <Link href="/guides" className="text-sm font-semibold" style={{ color: 'var(--primary)' }}>전체 보기 →</Link>
@@ -147,7 +147,7 @@ export default async function HomePage() {
       {/* 최신 블로그 */}
       {blogs.length > 0 && (
         <section className="max-w-6xl mx-auto px-5 py-14">
-          <div className="text-center mb-8">
+          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <h2 className="text-2xl font-black mb-1" style={{ color: 'var(--text)' }}>최신 글</h2>
             <p className="text-sm mt-1 mb-3" style={{ color: 'var(--text-sub)' }}>청약 실전 정보와 분석</p>
             <Link href="/blog" className="text-sm font-semibold" style={{ color: 'var(--primary)' }}>전체 보기 →</Link>
