@@ -43,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko" className={notoSansKR.className}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
         <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer=window.dataLayer||[];
