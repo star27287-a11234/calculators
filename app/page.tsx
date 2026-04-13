@@ -63,7 +63,7 @@ export default async function HomePage() {
     <>
       {/* 히어로 */}
       <section style={{ background: 'linear-gradient(135deg, #1a73e8 0%, #1557b0 100%)' }}>
-        <div className="max-w-6xl mx-auto px-5 py-16 sm:py-20">
+        <div className="px-5 py-16 sm:py-20" style={{ maxWidth: '72rem', margin: '0 auto' }}>
           <div style={{ maxWidth: '42rem', margin: '0 auto', textAlign: 'center' }}>
             <div className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-full mb-5">
               2026년 최신 기준 반영
@@ -90,7 +90,7 @@ export default async function HomePage() {
       </section>
 
       {/* 도구 그리드 */}
-      <section className="max-w-6xl mx-auto px-5 py-14">
+      <section className="px-5 py-14" style={{ maxWidth: '72rem', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <h2 className="text-2xl font-black mb-2" style={{ color: 'var(--text)' }}>청약 도구 모음</h2>
           <p className="text-sm" style={{ color: 'var(--text-sub)' }}>공공데이터와 정부 정책 기반 — 광고 없이 무료 이용</p>
@@ -123,7 +123,7 @@ export default async function HomePage() {
       {/* 청약 가이드 */}
       {guides.length > 0 && (
         <section style={{ background: 'var(--bg-sub)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
-          <div className="max-w-6xl mx-auto px-5 py-14">
+          <div className="px-5 py-14" style={{ maxWidth: '72rem', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
               <h2 className="text-2xl font-black mb-1" style={{ color: 'var(--text)' }}>청약 가이드</h2>
               <p className="text-sm mt-1 mb-3" style={{ color: 'var(--text-sub)' }}>정부 정책 기반 팩트로만 작성한 청약 완벽 가이드</p>
@@ -146,7 +146,7 @@ export default async function HomePage() {
 
       {/* 최신 블로그 */}
       {blogs.length > 0 && (
-        <section className="max-w-6xl mx-auto px-5 py-14">
+        <section className="px-5 py-14" style={{ maxWidth: '72rem', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <h2 className="text-2xl font-black mb-1" style={{ color: 'var(--text)' }}>최신 글</h2>
             <p className="text-sm mt-1 mb-3" style={{ color: 'var(--text-sub)' }}>청약 실전 정보와 분석</p>
@@ -172,7 +172,7 @@ export default async function HomePage() {
 
       {/* 신뢰 섹션 */}
       <section style={{ background: 'var(--bg-sub)', borderTop: '1px solid var(--border)' }}>
-        <div className="max-w-6xl mx-auto px-5 py-12 text-center">
+        <div className="px-5 py-12" style={{ maxWidth: '72rem', margin: '0 auto', textAlign: 'center' }}>
           <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--text)' }}>왜 청약계산기인가요?</h2>
           <p className="text-sm mb-10" style={{ color: 'var(--text-sub)' }}>신뢰할 수 있는 데이터로 만든 청약 종합 도구</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

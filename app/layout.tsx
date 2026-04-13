@@ -54,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col">
         {/* 헤더 */}
         <header className="sticky top-0 z-50 bg-white" style={{ borderBottom: '1px solid var(--border)', boxShadow: '0 1px 3px rgba(0,0,0,0.06)' }}>
-          <div className="max-w-6xl mx-auto px-5 py-3.5 flex items-center justify-between gap-6">
+          <div className="px-5 py-3.5 flex items-center justify-between gap-6" style={{ maxWidth: '72rem', margin: '0 auto' }}>
             <Link href="/" className="flex items-center gap-2 flex-shrink-0">
               <span className="text-white text-xs font-black px-2 py-1 rounded-md" style={{ background: 'var(--primary)', letterSpacing: '-0.01em' }}>청약</span>
               <span className="font-bold text-base hidden sm:block" style={{ color: 'var(--text)' }}>계산기</span>
@@ -82,7 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* 푸터 */}
         <footer style={{ borderTop: '1px solid var(--border)', background: 'var(--bg-sub)', padding: '40px 20px 32px' }}>
-          <div className="max-w-6xl mx-auto">
+          <div style={{ maxWidth: '72rem', margin: '0 auto' }}>
             <div className="flex flex-col sm:flex-row justify-between items-start gap-6">
               <div>
                 <div className="flex items-center gap-2 mb-2">
