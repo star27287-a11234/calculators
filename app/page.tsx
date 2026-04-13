@@ -95,7 +95,7 @@ export default async function HomePage() {
           <h2 className="text-2xl font-black mb-2" style={{ color: 'var(--text)' }}>청약 도구 모음</h2>
           <p className="text-sm" style={{ color: 'var(--text-sub)' }}>공공데이터와 정부 정책 기반 — 광고 없이 무료 이용</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid-auto-1 grid-auto-2 grid-auto-lg-3">
           {TOOLS.map(tool => (
             <Link key={tool.href} href={tool.href}
               className="group flex flex-col p-5 rounded-2xl transition-all hover:-translate-y-1 hover:shadow-lg"
@@ -129,7 +129,7 @@ export default async function HomePage() {
               <p className="text-sm mt-1 mb-3" style={{ color: 'var(--text-sub)' }}>정부 정책 기반 팩트로만 작성한 청약 완벽 가이드</p>
               <Link href="/guides" className="text-sm font-semibold" style={{ color: 'var(--primary)' }}>전체 보기 →</Link>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid-auto-1 grid-auto-3">
               {guides.map(guide => (
                 <Link key={guide.slug} href={`/guides/${guide.slug}`}
                   className="p-5 rounded-xl bg-white hover:-translate-y-0.5 transition-all"
@@ -152,7 +152,7 @@ export default async function HomePage() {
             <p className="text-sm mt-1 mb-3" style={{ color: 'var(--text-sub)' }}>청약 실전 정보와 분석</p>
             <Link href="/blog" className="text-sm font-semibold" style={{ color: 'var(--primary)' }}>전체 보기 →</Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid-auto-1 grid-auto-2">
             {blogs.map(post => (
               <Link key={post.slug} href={`/blog/${post.slug}`}
                 className="flex gap-4 p-5 rounded-xl hover:-translate-y-0.5 transition-all"
@@ -175,7 +175,7 @@ export default async function HomePage() {
         <div className="px-5 py-12" style={{ maxWidth: '72rem', margin: '0 auto', textAlign: 'center' }}>
           <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--text)' }}>왜 청약계산기인가요?</h2>
           <p className="text-sm mb-10" style={{ color: 'var(--text-sub)' }}>신뢰할 수 있는 데이터로 만든 청약 종합 도구</p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid-auto-1 grid-auto-3" style={{ gap: '1.5rem' }}>
             {[
               { icon: '📋', title: '정부 공식 기준', desc: '국토교통부 기준표와 청약홈 공공데이터를 기반으로 계산합니다.' },
               { icon: '🔒', title: '개인정보 수집 없음', desc: '입력한 정보는 계산에만 사용되며 서버에 저장되지 않습니다.' },

@@ -61,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span className="font-bold text-base hidden sm:block" style={{ color: 'var(--text)' }}>계산기</span>
             </Link>
 
-            <nav className="hidden sm:flex items-center gap-1 flex-1 justify-center">
+            <nav className="nav-desktop items-center gap-1 flex-1 justify-center">
               {NAV.map(({ href, label }) => (
                 <Link key={href} href={href}
                   className="px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-[#f1f3f4]"
