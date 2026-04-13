@@ -30,6 +30,7 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .num { font-variant-numeric: tabular-nums; }
