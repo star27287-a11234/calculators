@@ -63,8 +63,8 @@ export default async function HomePage() {
     <>
       {/* 히어로 */}
       <section style={{ background: 'linear-gradient(135deg, #1a73e8 0%, #1557b0 100%)' }}>
-        <div className="px-5 py-16 sm:py-20" style={{ maxWidth: '72rem', margin: '0 auto' }}>
-          <div style={{ maxWidth: '42rem', margin: '0 auto', textAlign: 'center' }}>
+        <div className="max-w-6xl mx-auto px-5 py-16 sm:py-20">
+          <div className="max-w-2xl mx-auto text-center">
             <div className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-full mb-5">
               2026년 최신 기준 반영
             </div>
@@ -75,7 +75,7 @@ export default async function HomePage() {
               가점 계산부터 당첨 커트라인 조회, 자격 확인, DSR 계산까지.<br className="hidden sm:block" />
               국토교통부 공식 기준으로 정확하게 계산합니다.
             </p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', justifyContent: 'center' }}>
+            <div className="flex flex-wrap gap-3 justify-center">
               <Link href="/calculators/score"
                 className="inline-flex items-center gap-2 bg-white text-[#1a73e8] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-all hover:-translate-y-0.5">
                 가점 계산하기 →
@@ -90,12 +90,12 @@ export default async function HomePage() {
       </section>
 
       {/* 도구 그리드 */}
-      <section className="px-5 py-14" style={{ maxWidth: '72rem', margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+      <section className="max-w-6xl mx-auto px-5 py-14">
+        <div className="text-center mb-8">
           <h2 className="text-2xl font-black mb-2" style={{ color: 'var(--text)' }}>청약 도구 모음</h2>
           <p className="text-sm" style={{ color: 'var(--text-sub)' }}>공공데이터와 정부 정책 기반 — 광고 없이 무료 이용</p>
         </div>
-        <div className="grid-auto-1 grid-auto-2 grid-auto-lg-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {TOOLS.map(tool => (
             <Link key={tool.href} href={tool.href}
               className="group flex flex-col p-5 rounded-2xl transition-all hover:-translate-y-1 hover:shadow-lg"
@@ -123,13 +123,13 @@ export default async function HomePage() {
       {/* 청약 가이드 */}
       {guides.length > 0 && (
         <section style={{ background: 'var(--bg-sub)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
-          <div className="px-5 py-14" style={{ maxWidth: '72rem', margin: '0 auto' }}>
-            <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <div className="max-w-6xl mx-auto px-5 py-14">
+            <div className="text-center mb-8">
               <h2 className="text-2xl font-black mb-1" style={{ color: 'var(--text)' }}>청약 가이드</h2>
               <p className="text-sm mt-1 mb-3" style={{ color: 'var(--text-sub)' }}>정부 정책 기반 팩트로만 작성한 청약 완벽 가이드</p>
               <Link href="/guides" className="text-sm font-semibold" style={{ color: 'var(--primary)' }}>전체 보기 →</Link>
             </div>
-            <div className="grid-auto-1 grid-auto-3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {guides.map(guide => (
                 <Link key={guide.slug} href={`/guides/${guide.slug}`}
                   className="p-5 rounded-xl bg-white hover:-translate-y-0.5 transition-all"
@@ -146,13 +146,13 @@ export default async function HomePage() {
 
       {/* 최신 블로그 */}
       {blogs.length > 0 && (
-        <section className="px-5 py-14" style={{ maxWidth: '72rem', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <section className="max-w-6xl mx-auto px-5 py-14">
+          <div className="text-center mb-8">
             <h2 className="text-2xl font-black mb-1" style={{ color: 'var(--text)' }}>최신 글</h2>
             <p className="text-sm mt-1 mb-3" style={{ color: 'var(--text-sub)' }}>청약 실전 정보와 분석</p>
             <Link href="/blog" className="text-sm font-semibold" style={{ color: 'var(--primary)' }}>전체 보기 →</Link>
           </div>
-          <div className="grid-auto-1 grid-auto-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {blogs.map(post => (
               <Link key={post.slug} href={`/blog/${post.slug}`}
                 className="flex gap-4 p-5 rounded-xl hover:-translate-y-0.5 transition-all"
@@ -172,10 +172,10 @@ export default async function HomePage() {
 
       {/* 신뢰 섹션 */}
       <section style={{ background: 'var(--bg-sub)', borderTop: '1px solid var(--border)' }}>
-        <div className="px-5 py-12" style={{ maxWidth: '72rem', margin: '0 auto', textAlign: 'center' }}>
+        <div className="max-w-6xl mx-auto px-5 py-12 text-center">
           <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--text)' }}>왜 청약계산기인가요?</h2>
           <p className="text-sm mb-10" style={{ color: 'var(--text-sub)' }}>신뢰할 수 있는 데이터로 만든 청약 종합 도구</p>
-          <div className="grid-auto-1 grid-auto-3" style={{ gap: '1.5rem' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
               { icon: '📋', title: '정부 공식 기준', desc: '국토교통부 기준표와 청약홈 공공데이터를 기반으로 계산합니다.' },
               { icon: '🔒', title: '개인정보 수집 없음', desc: '입력한 정보는 계산에만 사용되며 서버에 저장되지 않습니다.' },
